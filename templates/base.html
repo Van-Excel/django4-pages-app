@@ -7,10 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-   {% extends 'base.html' %}
-
+    <header>
+        <a href="{% url 'home' %}"> Home</a>
+        <a href="{% url 'about'}">About</a>
+    </header>
+    
     {% block content %}
-    <h2> This is the about page</h2>
     {% endblock content %}
-</body> 
+</body>
 </html>
+
